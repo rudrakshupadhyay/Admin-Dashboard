@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
+  font-family: 'Roboto', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -19,4 +19,93 @@ canvas,
 svg {
   max-width: 100%;
   display: block;
+}
+.profile , .userIcon{
+  width: 40px;          /* standard dashboard size */
+  height: 40px;
+  border-radius: 50%;  /* makes it circular */
+  object-fit: cover;   /* prevents stretching */
+}
+.userIcon{
+    width: 70px;          /* standard dashboard size */
+    height: 70px;
+}
+.idName{
+    font-weight: bolder;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #FFFFFF;
+    padding: 20px;
+}
+.headerTop{
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar{
+    background-color: #4397ea;
+    color: #E5E7EB;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.searchbar input{
+    background-color: rgb(223, 223, 223);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+    height: 25px;
+    width: 500px;
+    padding: 2px 14px;
+    outline: none;
+}
+.notify{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.sidebar li,.sidebar h1 {
+  display: flex;              
+  align-items: center;        
+  gap: 12px;                  
+  padding: 10px 8px;
+  cursor: pointer;
+}
+.headerBottomRight{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.headerBottomLeft{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.mainGreeting{
+    font-weight: bolder;
+}
+.currUserName{
+    font-size: x-large;
+    font-weight: bolder;
+}
+.functionButton{
+    background-color: #4397ea;
+    color: #E5E7EB;
+    font-weight: bolder;
+    padding: 0px 20px;
+    border-radius: 20px;
+    border: none;
+    min-width: 120px;
+    height: 40px;
+}
+.headerBottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>adminDashboard</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="header">
+            <div class="headerTop">
+                <div class="searchbar">
+                    <span class="material-icons">search</span>
+                    <span><input type="search" id="find" name="userSearch"></span>
+                </div>
+                <div class="notify">
+                    <span class="material-icons">notifications</span>
+                    <img src="images/cool-dude-with-shades-earphones-and-jacket-svgrepo-com.svg" alt="profilePhoto" class="profile">
+                    <span class="idName">Kernel Prime</span>
+                </div>
+            </div>
+            <div class="headerBottom">
+                <div class="headerBottomLeft">
+                    <div class="userIconDiv">
+                        <img src="images/cool-dude-with-shades-earphones-and-jacket-svgrepo-com.svg" alt="profilePhoto" class="userIcon">
+                    </div>
+                    <div class="greeting">
+                        <div class="mainGreeting">Hi there,</div>
+                        <div class="currUserName">Kernel Prime (@kernel)</div>
+                    </div>
+                </div>
+                <div class="headerBottomRight">
+                    <button class="functionButton">New</button>
+                    <button class="functionButton">Upload</button>
+                    <button class="functionButton">Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="content"></div>
+        <div class="sidebar">
+            <div class="sidebarTop"><h1><span class="material-icons">dashboard</span><span>Dashboard</span></h1></div>
+            <ul class="sidebarFunction">
+                <li>
+                    <span class="material-icons">home</span><span>Home</span>
+                </li>
+                <li>
+                    <span class="material-icons">person</span><span>Profile</span>
+                </li>
+                <li>
+                    <span class="material-icons">cloud</span><span>Messages</span>
+                </li>
+                <li>
+                    <span class="material-icons">history</span><span>History</span>
+                </li>
+                <li>
+                    <span class="material-icons">folder</span><span>Tasks</span>
+                </li>
+                <li>
+                    <span class="material-icons">groups</span><span>Communities</span>
+                </li>
+            </ul>
+            <ul class="sidebarHelp">
+                <li>
+                    <span class="material-icons">settings</span><span>Settings</span>
+                </li>
+                <li>
+                    <span class="material-icons">help_outline</span><span>Support</span>
+                </li>
+                <li>
+                    <span class="material-icons">lock</span><span>Privacy</span>
+                </li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
