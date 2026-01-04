@@ -23,7 +23,8 @@ svg {
 .container{
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
 }
 .profile , .userIcon{
   width: 40px;          /* standard dashboard size */
@@ -45,6 +46,8 @@ svg {
     background-color: #FFFFFF;
     padding: 20px;
     grid-column: 2/-1;
+    position: relative;
+    box-shadow: 0 4px 10px rgb(0, 0, 0,0.15);
 }
 .headerTop{
     display: flex;
@@ -118,11 +121,7 @@ svg {
     align-items: center;
     justify-content: space-between;
 }
-.content{
-    grid-row: 2/-1;
-    grid-column: 2/-1;
-    background-color: rgb(223, 223, 223);
-}
+
 .cardTitle{
     font-weight: bolder;
 }
@@ -132,7 +131,60 @@ svg {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
 }
-.card{
+.card ,.trendId , .announce{
     background-color: #FFFFFF;
     border-radius: 10px;
 }
+.content{
+    grid-row: 2/-1;
+    grid-column: 2/-1;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    align-items: stretch;
+    background-color: rgb(223, 223, 223);
+    height: 100%;
+    padding: 30px 20px;
+}
+/* .content{
+
+    
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    
+} */
+.currId{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.divider {
+  height: 1px;
+  background-color: #ddd;
+  width: 100%;
+  margin: 16px 0;
+}
+.cardContent{
+    color: rgb(94, 92, 92);
+}
+.sectionName{
+    font-weight: 500;
+    font-size: larger;
+}
+.rightContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.rightContentUp , .rightContentDown{
+    flex: 1;
+}
+.article{
+    display: flex;
+    flex-direction: column;
+}
+.articleList{
+    flex: 1;
+}
+
